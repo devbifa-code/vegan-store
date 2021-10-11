@@ -1,0 +1,610 @@
+body {
+	font-family: sans-serif;
+}
+
+
+header {
+	background-color: white;
+	position: sticky;
+	top: 0px;
+	box-shadow: 0px 1px 3px grey;
+	height: 45px;
+	font-family: sans-serif;
+	display: grid;
+	justify-content: none;
+	grid-template-columns: auto 150px 150px 150px 150px;
+}
+
+
+.menu-item{
+	margin-right: 15px;
+	margin-left: 15px;
+	border: none;
+}
+
+
+header i {
+	color: grey;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 24px;
+}
+
+
+header button {
+margin-top: 10px;
+	height: 25px;
+	border-radius: 4px;
+	font-size: 12px;
+	background-color: green;
+	color: whitesmoke;
+}
+
+
+header button:hover {
+	background-color: white;
+	color: black;
+}
+
+
+header p {
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+
+header select {
+	height: 25px;
+	margin-top: 10px;
+}
+
+
+main {
+	display: grid;
+	grid-template-areas: "div";
+	justify-content: center;
+	text-align: center;
+	padding: 1px;
+	height: 650px;
+	background: url(/bkg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+main div {
+	grid-area: div;
+	margin-top: 50px;
+	left: 400px;
+	box-sizing: border-box;
+	word-wrap: break-word;
+}
+
+
+main h3 {
+	font-weight: 600;
+	font-style: monospace;
+	letter-spacing: 2px;
+	color: #d3f3fb;
+	font-size: 26px;
+}
+
+
+main p{
+	color: #d3f3fb ;
+}
+
+
+#steps {
+	display: grid;
+	grid-template-areas: "step1 step2 step3 step4";
+}
+
+
+#steps div {
+	box-sizing: border-box;
+	padding: 40px;
+	height: 450px;
+	text-align: center;
+}
+
+
+
+#steps div > .fa,.far {
+	font-size: 80px;
+	color: white;
+}
+
+
+#steps div > strong {
+	margin-top: 20px;
+	color: white;
+}
+
+
+#steps div > P {
+	margin-top: 50px;
+	color: white;
+}
+
+
+#step1 {
+	word-wrap: break-word;
+	grid-area: step1;
+	background-color: lightblue;
+}
+
+
+#step2 {
+	word-wrap: break-word;
+	grid-area: step2;
+	background-color: lightcoral;
+}
+
+
+#step3 {
+	word-wrap: break-word;
+	grid-area: step3;
+	background-color: lightgreen;
+}
+
+
+#step4 {
+	word-wrap: break-word;
+	grid-area: step4;
+	background-color: lightgrey;
+}
+
+
+#store {
+	border-radius: 0px 0px 20px 20px;
+	text-align: center;
+	background: #fff2ffcb;
+	display: grid;
+	grid-template-areas:
+	"storehead storehead storehead storehead"
+	"store1 store2 store3 store4";
+}
+
+
+#storehead > h1,p {
+	margin-top: 40px;
+}
+
+
+#storehead >p {
+	margin-top: -4px;
+}
+
+
+#store button {
+	height: 80px;
+	width: 80px;
+	border: none;
+	background-color: green;
+	color: white;
+	outline: none;
+	font-size: 40px;
+	border-radius: 100px;
+}
+
+
+#storehead {
+	grid-area: storehead;
+}
+
+
+#storehead >i {
+	font-family: cursive,monospace;
+}
+
+
+#store1 {
+	margin-top: 10px;
+	padding: 30px;
+	box-sizing: border-box;
+	word-wrap: break-word;
+	grid-area: store1;
+}
+
+
+#store2 {
+	margin-top: 10px;
+	padding: 30px;
+	box-sizing: border-box;
+	word-wrap: break-word;
+	grid-area: store2;
+
+}
+
+
+#store3 {
+	margin-top: 10px;
+	padding: 30px;
+	grid-area: store3;
+	box-sizing: border-box;
+	word-wrap: break-word;
+
+}
+
+
+#store4 {
+	margin-top: 10px;
+	padding: 30px;
+	word-wrap: break-word;
+	grid-area: store4;
+	box-sizing: border-box;
+}
+
+
+#testimony {
+	background-color: white;
+	display: grid;
+	grid-template-areas:
+	"testimonyheader testimonyheader testimonyheader"
+	"firsttestimony secondtestimony thirdtestimony";
+	text-align: center;
+	column-gap: 15px;
+}
+
+
+#testimony div {
+	margin: 80px;
+}
+
+
+#firsttestimony,#secondtestimony,#thirdtestimony {
+	background-color: whitesmoke;
+	border-top-left-radius: 40px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-sizing: border-box;
+	word-wrap: break-word;
+	padding: 25px;
+	margin-top: 45px;
+}
+
+
+#testimony p,strong {
+	font-size: 12px;
+	color: rgb(19, 106, 134);
+	font-weight: lighter;
+	font-style: italic;
+}
+
+
+#testimony div > img {
+	height: 80px;
+	width: 80px;
+	border-radius: 100px;
+}
+
+
+#testimonyheader {
+	grid-area: testimonyheader;
+}
+
+
+#firsttestimony {
+	grid-area: firsttestimony;
+}
+
+
+#secondtestimony {
+	grid-area: secondtestimony;
+}
+
+
+#thirdtestimony {
+	grid-area: thirdtestimony;
+}
+
+
+.testimonies:hover {
+	box-shadow: 0px 4px 4px grey;
+}
+
+
+#followers {
+	height: 800px;
+	margin-top: 30px;
+	display: grid;
+	grid-template-areas: "firstfollower firstfollower firstfollower firstfollower firstfollower firstfollower firstfollower secondfollower";
+}
+
+
+#firstfollower {
+	background: url(/bkg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	grid-area: firstfollower;
+	box-sizing: border-box;
+	word-wrap: break-word;
+}
+
+#secondfollower {
+	background: url(/bkg-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	word-wrap: break-word;
+	grid-area: secondfollower;
+}
+
+#followers div >h2 {
+	font-size: 40px;
+	font-family: fantasy;
+}
+
+
+#secondfollower  input {
+	height: 25px;
+	width: 150px;
+	border-radius: 4px;
+	border: none;
+}
+
+
+#secondfollower input,button {
+	margin-top: 50px;
+}
+
+
+#secondfollower button:hover {
+	background-color: white;
+	color: black;
+}
+
+
+#secondfollower button {
+	background: lightgreen;
+	border: none;
+	border-radius: 6px;
+	margin-top: 20px;
+	color: white;
+	height: 30px;
+	width: 120px;
+}
+
+
+#followus {
+	border-radius: 8px;
+	margin-top: 30px;
+	background-color: rgb(229, 238, 243);
+	display: grid;
+	justify-content: center;
+	grid-template-areas: "first second third fourth";
+}
+
+
+#followus div {
+	margin-top: 30px;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: center;
+}
+
+
+#first {
+	grid-area: first;
+}
+
+
+#second {
+	grid-area: second;
+}
+
+
+#third {
+	grid-area: third;
+}
+
+
+#fourth {
+	grid-area: fourth;
+}
+
+
+#video {
+	display: grid;
+	grid-column: auto;
+	justify-content: center;
+	text-align: center;
+	margin-top: 40px;
+}
+
+
+#video h1 {
+	color: lavender;
+}
+
+#address {
+	margin-top: 20px;
+	background-color: rgb(250, 243, 244);
+	display: grid;
+	justify-content: space-around;
+	grid-template-areas: "firstaddress secondaddress";
+}
+
+
+#firstaddress {
+	margin-top: 50px;
+	grid-area: firstaddress;
+}
+
+
+#firstaddress p {
+	font-size: 13px;
+	margin-top: 0px;
+}
+
+
+#secondaddress {
+	margin-top: 50px;
+	grid-area: secondaddress;
+}
+
+
+#secondaddress button {
+	background-color: rgb(133, 233, 133);
+	color: white;
+	border: none;
+	height: 28px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+
+#secondaddress button:hover {
+	background-color: whitesmoke;
+	color: black;
+}
+
+
+.info {
+	padding-top: 20px;
+	height: 100px;
+	width: 250px;
+	word-wrap: break-word;
+}
+
+
+footer {
+	background-color: black;
+	color: white;
+	font-size: auto;
+	height: 30px;
+	display: grid;
+	grid-column: auto;
+	justify-content: center;
+}
+
+.i-color {
+	color: coral;
+}
+
+
+.scale {
+	transition: transform 2s ease-in;
+}
+
+
+.scale :hover {
+	transform: scale(1.2);
+}
+
+
+
+@media (max-width:900px) {
+
+
+	header {
+		grid-template-columns: auto  auto;
+		justify-content: space-between;
+	}
+
+
+	header > select,p {
+		display: none;
+	}
+
+
+	main div >p {
+		display: block;
+	}
+
+
+	main div {
+		grid-template-areas: "div";
+	}
+
+
+	#steps {
+		grid-template-areas:
+		"step1 step1 step1 step1"
+		"step2 step2 step2 step2"
+		"step3 step3 step3 step3"
+		"step4 step4 step4 step4";
+
+	}
+
+
+	#steps p {
+		display: block;
+	}
+
+
+	#store {
+		grid-template-areas:
+		"storehead storehead storehead storehead"
+		"store1 store1 store1 store1"
+		"store2 store2 store2 store2"
+		"store3 store3 store3 store3"
+		"store4 store4 store4 store4";
+	}
+
+
+	#store p {
+		display: block;
+	}
+
+
+	#testimony {
+		grid-template-areas:
+		"testimonyheader testimonyheader testimonyheader"
+		"firsttestimony firsttestimony firsttestimony"
+		"secondtestimony secondtestimony secondtestimony"
+		"thirdtestimony thirdtestimony thirdtestimony";
+	}
+
+
+	#testimony div {
+		margin: 0px;
+		margin-top: 80px;
+	}
+
+
+	#testimony p {
+		display: block;
+	}
+
+
+	#followers {
+		grid-template-areas: "firstfollower firstfollower firstfollower firstfollower"
+		"secondfollower secondfollower secondfollower secondfollower";
+	}
+
+
+	#followus {
+		grid-template-areas:
+		"first first first first"
+		"second second second second"
+		"third third third third"
+		"fourth fourth fourth fourth";
+	}
+
+
+	#followus p {
+		display: block;
+	}
+
+
+	#video {
+		grid-column: auto;
+	}
+
+
+	#address {
+		grid-template-areas: "firstaddress firstaddress"
+		" secondaddress secondaddress";
+	}
+   
+   #address p{
+   	display: block;
+   }
+   
+   
+   footer{
+   	grid-column: auto;
+}
+}
